@@ -1,0 +1,322 @@
+/* start variable */
+:root {
+  --blue-box-bg: #17a2b8;
+  --green-box-bg:#28a745;
+  --yellow-box-bg: #ffc107;
+  --red-box-bg:#dc3545;
+  --blue-text: #007bff;
+  --grey-text-color: #6c757d;
+  --grey-time-color: #6c757d;
+  --comment-text-color: #444;
+  --comment-grey-bg-color: #d2d6de;
+  --comment-blue-bg-color: #007bff;
+  --green-gradiant: #48b461;
+  --foote-color: #869099;
+  --sidebar-link-color: rgba(255,255,255,.8);
+  --side-bar-border: #4b545c;
+  --link-color: #4b545c;
+  --sidebar-bg: #343a40;
+  --nav-link-color: rgba(0,0,0,.5);
+  --body-color: #212529;
+  --border-color: #dee2e6;
+  --todo-color: #495057;
+}
+/* end variable */
+/* box properties */
+.d-f {
+  display: flex;
+}
+.align-c {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sp-btw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.d-b {
+  display: block;
+}
+.in-b {
+  display: inline-block;
+}
+.grow {
+  flex-grow: 1;
+}
+/* box properties */
+/* padding and margin */
+.pt-10 {
+  padding-top: 10px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+.pr-15 {
+  padding-right: 15px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pr-20 {
+  padding-right: 20px;
+}
+.p-5 {
+  padding: 5px;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mr-30 {
+  margin-right: 30px;
+}
+.auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* padding and margin */
+/* border */
+.b-c {
+  border-radius: 50%;
+}
+.rad-6 {
+  border-radius: 6px;
+}
+.rad-b-6 {
+  border-radius: 0 0 6px 6px;
+}
+.outline-non {
+  outline: none;
+}
+.border {
+  border: 1px solid var(--border-color);
+}
+.br {
+  border-right: 1px solid var(--border-color);
+}
+.b-t {
+  border-bottom: 1px solid var(--border-color);
+}
+.b-b {
+  border-bottom: 1px solid var(--border-color);
+}
+/* border */
+/* deminssions */
+.img-size {
+  width: 40px;
+  height: 40px;
+}
+.w-fit {
+  width: fit-content;
+}
+.w-full {
+  width: 100%;
+}
+.max-w {
+  max-width: 100%;
+}
+/* deminssions */
+/* colors */
+.link-c {
+  color: var(--foote-color);
+}
+.c-black {
+  color: var(--body-color);
+}
+.bg-grey {
+  background-color: #adb5bd;
+}
+.c-white {
+  color: #fff;
+}
+.c-comment {
+  color: #444;
+}
+.c-red {
+  color: var(--red-box-bg);
+}
+.c-yellow {
+  color: var(--yellow-box-bg);
+}
+.c-blue {
+  color: var(--blue-box-bg);
+}
+.todo-color {
+  color: var(--todo-color);
+}
+.light-grey {
+  color: var(--nav-link-color);
+}
+.bg-form {
+  background-color: #3f474e;
+}
+.bg-blue {
+  background-color: var(--blue-text);
+}
+.bg-red {
+  background-color: var(--red-box-bg);
+}
+.bg-yellow {
+  background-color: var(--yellow-box-bg);
+}
+.bg-green {
+  background-color: var(--green-box-bg);
+}
+.bg-white {
+  background-color: white;
+}
+.bg-comment {
+  background-color: #d2d6de;
+}
+.main-bg {
+  background-color: #f4f6f9;
+}
+.sg-bg {
+  background-color: #6c757d;
+}
+.sgn-bg {
+  background-color: #16812f;
+}
+/* colors */
+/* fonts */
+.fs-10 {
+  font-size: 10px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.bold {
+  font-weight: bold;
+}
+.normal {
+  font-weight: normal;
+}
+/* fonts */
+/* position */
+.p-relative {
+  position: relative;
+}
+.text-c {
+  text-align: center;
+}
+/* position */
+
+/* cpmponent */
+.pointer {
+  cursor: pointer;
+}
+.btn-shape {
+  border-radius: 6px;
+  padding: 3px 5px;
+}
+.trans {
+  transition: .3s;
+}
+.button {
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.shadow {
+  box-shadow: 2px 2px 5px #ccc, -2px -2px 5px #ccc;
+}
+.through {
+  text-decoration: line-through;
+}
+.mobile {
+  display: none;
+}
+/* cpmponent */

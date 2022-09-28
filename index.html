@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Template</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/framework.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="page d-f">
+    <div class="sidebar">
+      <div class="admin trans pt-15 pb-15 pl-20 pr-20 p-relative">
+        <a href="home" class="d-f align-c link-c fs-18">
+          <img class='mr-10 b-c img-size' src="./img/AdminLTELogo.png" alt="logo">
+          <span>AdminLTE 3</span>
+        </a>
+      </div>
+      <div class="profile trans pt-15 pb-15 pl-20 pr-20 mb-10 d-f align-c fs-15 bold p-relative">
+        <img class="mr-10 b-c img-size" src="./img/user1-128x128.jpg" alt="user">
+        <a href="home" class="link-c">Alexander Pierce</a>
+      </div>
+      <div class="search trans mb-10 pr-20">
+        <form action="" class="pl-20 d-f align-c">
+          <input type="text" placeholder="Search" class="bg-form d-b pt-10 pb-10 pl-15 rad-6 outline-non fs-15">
+          <span class="rad-6 centered bg-form pointer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </form>
+      </div>
+      <div class="dashboard trans c-white bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 bg-blue mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-tachometer-alt"></i>
+          <span class="ml-10">Dashboard</span>
+        </div>
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="widgets trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-th"></i>
+          <span class="ml-5">Widgets</span>
+        </div>
+        <div class="span c-white btn-shape bg-red">NEW</div>
+      </div>
+      <div class="widgets layout trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-copy"></i>
+          <span class="ml-5">Layout Options</span>
+        </div>
+        <div class="d-f">
+          <span class="c-white btn-shape bg-blue mr-10">6</span>
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </div>
+      <div class="widgets chart trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-chart-pie"></i>
+          <span class="ml-5">Charts</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </div>
+      <div class="widgets ui trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-tree"></i>
+          <span class="ml-5">UI Elements</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </div>
+      <div class="widgets forms trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-edit"></i>
+          <span class="ml-5">Forms</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </div>
+      <div class="widgets Tables trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-table"></i>
+          <span class="ml-5">Tables</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </div>
+      <div class="title link-c fs-18 ml-20 mr-20 pb-10 pl-20">EXAMPLES</div>
+      <div class="widgets calendar trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-calendar-alt"></i>
+          <span class="ml-5">Calendar</span>
+        </div>
+        <div>
+          <span class="c-white btn-shape bg-blue">2</span>
+        </div>
+      </div>
+      <div class="widgets gallery trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-image"></i>
+          <span class="ml-5">Gallery</span>
+        </div>
+      </div>
+      <div class="widgets board trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-columns"></i>
+          <span class="ml-5">Kanban Board</span>
+        </div>
+      </div>
+      <div class="widgets envelope trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon far fa-envelope"></i>
+          <span class="ml-5">Mailbox</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </div>
+      <div class="widgets pages trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-book"></i>
+          <span class="ml-5">Pages</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </div>
+      <div class="widgets extras trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon far fa-plus-square"></i>
+          <span class="ml-5">Extras</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </div>
+      <div class="widgets search-link trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-search"></i>
+          <span class="ml-5">Search</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </div>
+      <div class="title link-c fs-18 ml-20 mr-20 pb-10 pl-20">MISCELLANBEOUS</div>
+      <div class="widgets tabbed trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-ellipsis-h"></i>
+          <span class="ml-5">Tabbed IFrame Plugin</span>
+        </div>
+      </div>
+      <div class="widgets documentation trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon fas fa-file"></i>
+          <span class="ml-5">Documentation</span>
+        </div>
+      </div>
+      <div class="title link-c fs-18 ml-20 mr-20 pb-10 pl-20">MULTI LEVEL EXAMPLE</div>
+      <div class="widgets level-1 trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="fas fa-circle nav-icon"></i>
+          <span class="ml-5">Level 1</span>
+        </div>
+      </div>
+      <div class="widgets level-2 trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="fas fa-circle nav-icon"></i>
+          <span class="ml-5">Level 1</span>
+        </div>
+        <i class="fas fa-angle-left"></i>
+      </div>
+      <div class="widgets level-1 trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="fas fa-circle nav-icon"></i>
+          <span class="ml-5">Level 1</span>
+        </div>
+      </div>
+      <div class="title link-c fs-18 ml-20 mr-20 pb-10 pl-20">Labels</div>
+      <div class="widgets important trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon far fa-circle c-red"></i>
+          <span class="ml-5">Important</span>
+        </div>
+      </div>
+      <div class="widgets warning trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon far fa-circle c-yellow"></i>
+          <span class="ml-5">Warning</span>
+        </div>
+      </div>
+      <div class="widgets informational trans link-c bold pointer pl-20 pr-20 sp-btw pt-15 pb-15 rad-6 mb-10 ml-20 mr-20">
+        <div class="icon">
+          <i class="nav-icon far fa-circle c-blue"></i>
+          <span class="ml-5">Informational</span>
+        </div>
+      </div>
+    </div>
+    <!-- start content -->
+    <div class="content">
+      <!-- start head sec -->
+      <div class="head sp-btw p-20 bg-white">
+        <div class="left-nav d-f">
+          <div class="hamburger mr-30 light-grey pointer trans">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
+            <ul class="d-f">
+              <li class="mr-30"><a class="light-grey trans" href="home">Home</a></li>
+              <li><a class="light-grey trans" href="contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right-nav d-f light-grey">
+          <span class="mr-30 pointer trans">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="comment-icon p-relative mr-30 pointer trans">
+            <i class="far fa-comments"></i>
+          </span>
+          <span class="bell-icon p-relative mr-30 pointer trans">
+            <i class="far fa-bell"></i>
+          </span>
+          <span class="mr-30 pointer trans">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </span>
+          <span class="pointer trans">
+            <i class="fas fa-th-large"></i>
+          </span>
+        </div>
+      </div>
+      <!-- end head sec -->
+      <!-- start body sec -->
+      <div class="body">
+        <div class="body-head sp-btw p-20 mb-20">
+          <h1 class="c-black normal">Dashboard</h1>
+          <div>
+            <a href="home" class="to-home c-blue bold fs-13">Home</a> / <span class="link-c fs-13 bold">Dashboard v!</span>
+          </div>
+        </div>
+        <div class="box-parent p-20">
+          <div class="box c-white  rad-6 p-relative">
+            <div class="info sp-btw pl-15 pr-15 pt-20">
+              <div>
+                <h2 class="mb-20">150</h2>
+                <p class="fs-15">New orders</p>
+              </div>
+              <i class="fa-solid fa-suitcase"></i>
+            </div>
+            <a href="" class="c-white bold d-b text-c pt-10 pb-10 mt-20 rad-b-6 p-relative">More info
+              <i class="fas fa-arrow-circle-right"></i>
+            </a>
+          </div>
+          <div class="box c-white  rad-6 p-relative">
+            <div class="info sp-btw pl-15 pr-15 pt-20">
+              <div>
+                <h2 class="mb-20 p-relative w-fit">53<sup>%</sup></h2>
+                <p class="fs-15">Bounce Rate</p>
+              </div>
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <a href="" class="c-white bold d-b text-c pt-10 pb-10 mt-20 rad-b-6 p-relative">More info
+              <i class="fas fa-arrow-circle-right"></i>
+            </a>
+          </div>
+          <div class="box rad-6 p-relative">
+            <div class="info sp-btw pl-15 pr-15 pt-20">
+              <div>
+                <h2 class="mb-20  c-black">44</h2>
+                <p class=" c-black fs-15">User Registrations</p>
+              </div>
+              <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <a href="" class="bold c-black d-b text-c pt-10 pb-10 mt-20 rad-b-6 p-relative">More info
+              <i class="fas fa-arrow-circle-right"></i>
+            </a>
+          </div>
+          <div class="box c-white rad-6 p-relative">
+            <div class="info sp-btw pl-15 pr-15 pt-20">
+              <div>
+                <h2 class="mb-20">65</h2>
+                <p class="fs-15">Unique Visitors</p>
+              </div>
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <a href="" class="c-white bold d-b text-c pt-10 pb-10 mt-20 rad-b-6 p-relative">More info
+              <i class="fas fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="statistics-container d-f p-20">
+          <div class="left-container pt-10 pb-20 rad-6">
+            <div class="static mb-20 bg-white shadow rad-6">
+              <div class="head-stat sp-btw pl-20 pr-20">
+                <div class="icon c-black">
+                  <i class="fa-solid fa-chart-pie"></i>
+                  Sales
+                </div>
+                <div class="btns">
+                  <button class="button bold fs-16 bg-blue c-white">Area</button>
+                  <button class="button bold fs-16 link-c bg-white">Donut</button>
+                </div>
+              </div>
+              <div class="img">
+                <img class="w-full" src="./img/static1.jpg" alt="">
+              </div>
+            </div>
+            <div class="direct-chat pb-15 shadow mb-20 rad-6">
+              <div class="head-chat pb-20 pl-20 pr-20 sp-btw bg-white pt-15">
+                <h3 class="link-c normal fs-20">Direct Chat</h3>
+                <div class="reaction d-f light-grey align-c bold">
+                  <span class="btn-shape bg-blue w-fit c-white d-f align-c mr-20 pointer">3</span>
+                  <i class="fa-solid fa-minus mr-20 pointer"></i>
+                  <i class="fa-regular fa-comments mr-20 pointer"></i>
+                  <i class="fa-solid fa-plus pointer"></i>
+                </div>
+              </div>
+              <div class="chat-sec pl-1p pr-10 pt-20 bg-white">
+                <div class="chat-box rad-6 p-15 men">
+                  <div class="name sp-btw">
+                    <h4 class="mb-20 c-black fs-16">Alexander pierce</h4>
+                    <div class="time link-c fs-13">23 Jan 2:00 pm</div>
+                  </div>
+                  <div class="msg mb-20 d-f align-c p-10 rad-6">
+                    <img class="img-size b-c mr-10" src="./img/user1-128x128.jpg" alt="">
+                    <p class="p-10 rad-6 grow fs-13 bg-comment c-comment">Is this template really for free? That's unbelievable!</p>
+                  </div>
+                </div>
+                <div class="chat-box rad-6 p-15 women">
+                  <div class="name sp-btw">
+                    <div class="time mr-10 link-c fs-13">23 Jan 2:05 pm</div>
+                    <h4 class="mb-20 c-black fs-16">Sarah Bullock</h4>
+                  </div>
+                  <div class="msg mb-20 d-f p-10 rad-6 align-c">
+                    <p class="p-10 rad-6 bg-blue c-white grow fs-13  mr-10">You better believe it!</p>
+                    <img class="img-size b-c" src="./img/user3-128x128.jpg" alt="">
+                  </div>
+                </div>
+                <div class="chat-box rad-6 p-15 men">
+                  <div class="name sp-btw">
+                    <h4 class="mb-20 c-black fs-16">Alexander pierce</h4>
+                    <div class="time link-c fs-13">23 Jan 5:37 pm</div>
+                  </div>
+                  <div class="msg mb-20 d-f align-c p-10 rad-6">
+                    <img class="img-size b-c mr-10" src="./img/user1-128x128.jpg" alt="">
+                    <p class="p-10 rad-6 grow fs-13 bg-comment c-comment">Working with AdminLTE on a great new app! Wanna join?</p>
+                  </div>
+                </div>
+                <div class="chat-box rad-6 p-15 women">
+                  <div class="name sp-btw">
+                    <div class="time mr-10 link-c fs-13">23 Jan 6:10 pm</div>
+                    <h4 class="mb-20 c-black fs-16">Sarah Bullock</h4>
+                  </div>
+                  <div class="msg mb-20 d-f p-10 rad-6 align-c">
+                    <p class="p-10 rad-6 bg-blue c-white grow fs-13  mr-10">I would love to.</p>
+                    <img class="img-size b-c" src="./img/user3-128x128.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="new-msg mt-15 mb-20 maib-bg">
+                <form action="" class="d-f align-c">
+                  <input type="text" class="button grow fs-15" placeholder="Type Message ...">
+                  <input type="submit" value="Send" class="button bg-blue bold fs-15 c-white d-b w-fit">
+                </form>
+              </div>
+            </div>
+            <!-- start todo list -->
+            <div class="todo rad-6 main-bg pb-10 shadow">
+              <div class="todo-head bg-white pt-15 pb-15 pl-20 pr-20 sp-btw b-b">
+                <div class="icon-list c-black">
+                  <i class="fa-solid fa-list"></i>
+                  To Do List
+                </div>
+                <div class="more-item c-blue d-f rad-6 border">
+                  <span class="p-10 centered pointer fs-13 br">&lt;&lt;</span>
+                  <span class="p-10 centered pointer fs-13 br">1</span>
+                  <span class="p-10 centered pointer fs-13 br">2</span>
+                  <span class="p-10 centered pointer fs-13 br">3</span>
+                  <span class="p-10 centered pointer fs-13 ">&gt;&gt;</span>
+                </div>
+              </div>
+              <div class="todo-body p-20 bg-white">
+                <div class="item-box p-relative wrap p-10 main-bg d-f align-c mb-5">
+                  <div class="icon">
+                    <!-- get to this point -->
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <input type="checkbox" class="ml-10">
+                  <span class="bold mr-10 fs-15 fs-13 ml-10 todo-color">Design a nive theme</span>
+                  <span class="btn-shape bg-red c-white fs-10">
+                    <i class="fa-regular fa-clock"></i>
+                    2 mins
+                  </span>
+                  <i class="fa-solid fa-pen-to-square edit"></i>
+                </div>
+                <div class="item-box p-relative wrap p-10 main-bg d-f align-c mb-5 light-grey">
+                  <div class="icon">
+                    <!-- get to this point -->
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <input type="checkbox" class="ml-10" checked>
+                  <span class="bold mr-10 fs-15 fs-13 ml-10 light-grey through">Make the theme responsive</span>
+                  <span class="btn-shape bg-grey c-white fs-10">
+                    <i class="fa-regular fa-clock"></i>
+                    4 hours
+                  </span>
+                  <i class="fa-solid fa-pen-to-square edit"></i>
+                </div>
+                <div class="item-box p-relative wrap p-10 main-bg d-f align-c mb-5">
+                  <div class="icon">
+                    <!-- get to this point -->
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <input type="checkbox" class="ml-10">
+                  <span class="bold mr-10 fs-15 fs-13 ml-10 todo-color">Let theme shine like a star</span>
+                  <span class="btn-shape bg-yellow c-black fs-10">
+                    <i class="fa-regular fa-clock"></i>
+                    1 day
+                  </span>
+                  <i class="fa-solid fa-pen-to-square edit"></i>
+                </div>
+                <div class="item-box p-relative wrap p-10 main-bg d-f align-c mb-5">
+                  <div class="icon">
+                    <!-- get to this point -->
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <input type="checkbox" class="ml-10">
+                  <span class="bold mr-10 fs-15 fs-13 ml-10 todo-color">Let theme shine like a star</span>
+                  <span class="btn-shape bg-green c-white fs-10">
+                    <i class="fa-regular fa-clock"></i>
+                    3 days
+                  </span>
+                  <i class="fa-solid fa-pen-to-square edit"></i>
+                </div>
+                <div class="item-box p-relative wrap p-10 main-bg d-f align-c mb-5">
+                  <div class="icon">
+                    <!-- get to this point -->
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <input type="checkbox" class="ml-10">
+                  <span class="bold mr-10 fs-15 fs-13 ml-10 todo-color">Check your messages and notifications</span>
+                  <span class="btn-shape bg-blue c-white fs-10">
+                    <i class="fa-regular fa-clock"></i>
+                    1 week
+                  </span>
+                  <i class="fa-solid fa-pen-to-square edit"></i>
+                </div>
+                <div class="item-box p-relative wrap p-10 main-bg d-f align-c mb-5">
+                  <div class="icon">
+                    <!-- get to this point -->
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <input type="checkbox" class="ml-10">
+                  <span class="bold mr-10 fs-15 fs-13 ml-10 todo-color">Let theme shine like a star</span>
+                  <span class="btn-shape sg-bg c-white fs-10">
+                    <i class="fa-regular fa-clock"></i>
+                    1 month
+                  </span>
+                  <i class="fa-solid fa-pen-to-square edit"></i>
+                </div>
+              </div>
+              <button class="button d-b btn-shape c-white bold bg-blue fs-15">
+                <i class="fa-solid fa-plus"></i>
+                Add item
+              </button>
+            </div>
+            <!-- end todo list -->
+          </div>
+          <div class="right-container mt-15 rad-6">
+            <div class="map pl-20 pr-20 pt-15 mb-15 pb-15  c-white rad-6 shadow">
+              <div class="map-head sp-btw pb-15 bold">
+                <div class="visitors">
+                  <i class="fa-solid fa-location-dot mr-10"></i>
+                  Visitors
+                </div>
+                <div class="date">
+                  <i class="fa-solid fa-calendar-days mr-10"></i>
+                  <i class="fa-solid fa-plus  fs-15"></i>
+                </div>
+              </div>
+              <div class="map-body">
+                <img class="d-b auto max-w" src="./img/map.jpg" alt="">
+              </div>
+            </div>
+            <div class="graph pl-20 pr-20 pt-15 pb-15 c-white shadow rad-6 mb-15">
+              <div class="graph-head sp-btw pb-15 bold fs-15">
+                <div class="sales">
+                  <i class="fa-solid fa-table-cells mr-10"></i>
+                  Sales
+                </div>
+                <div class="add">
+                  <i class="fa-solid fa-minus mr-10"></i>
+                  <i class="fa-solid fa-times"></i>
+                </div>
+              </div>
+              <div class="graph-body">
+                <img class="d-b auto max-w" src="./img/static2.jpg" alt="">
+              </div>
+            </div>
+            <div class="calendar pl-20 pr-20 pt-15 pb-15 c-white shadow rad-6">
+              <div class="calendar-head sp-btw pb-15 bold fs-15">
+                <div class="card">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  Calendar
+                </div>
+                <div class="add d-f gap-10">
+                  <span class=" btn-shape sgn-bg in-b pointer">
+                    <i class="fa-solid fa-bars  mr-5"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </span>
+                  <i class="fa-solid fa-minus btn-shape sgn-bg in-b pointer"></i>
+                  <i class="fa-solid fa-plus btn-shape sgn-bg in-b pointer"></i>
+                </div>
+              </div>
+              <div class="calendar-body">
+                <img class="d-b auto max-w" src="./img/calendar.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end body sec -->
+      <!-- start footer -->
+      <footer class="sp-btw p-20 bg-white wrap gap-10">
+        <p class="light-grey">
+          <strong>Copyright &copy; 2022-2023 </strong>
+          <a href="#" class="c-blue bold">AdminLTE.is</a>.
+          All rights reserved.
+        </p>
+        <p class="light-grey bold">Version 3.2.0</p>
+      </footer>
+      <!-- end footer -->
+      <!-- end content -->
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
